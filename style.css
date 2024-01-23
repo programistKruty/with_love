@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+
+  
+  body {
+    font-family: 'Rocher';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background: linear-gradient(90deg, rgba(159,255,10,1) 0%, rgba(0,164,255,0.07044824765843838) 51%, rgba(238,228,0,1) 100%);
+  }
+  @font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+  }
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+  }
+  .mint {
+    font-palette: --Mint;
+  }
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.link_header {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.section{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.header_name{
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-palette: --Mint;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000; 
+    margin: 0; 
+    
+}
+
+.cards{
+    display: flex;
+}
+.card{
+    size: 10;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.card-grid h3{
+    text-decoration: none;
+    font-palette: --Purples;
+}
+.card{
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
